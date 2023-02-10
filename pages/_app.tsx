@@ -1,11 +1,13 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { wrapper } from '../redux/store'
+import Layouts from './components/Layouts'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  console.log(Component)
   return (
-    <Component {...pageProps} />
+    <Layouts>
+      <Component {...pageProps} />
+    </Layouts>
   )
 }
 

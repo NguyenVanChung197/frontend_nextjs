@@ -16,6 +16,8 @@ export const getPosts = () => async (dispatch: any) => {
 
 export const createPost = (body: any) =>async (dispatch: any) => {
   try {
+    console.log(body);
+    
     const response = await baseAxios.post('/posts', {body});
     console.log(response);
     

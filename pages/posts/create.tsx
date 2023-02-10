@@ -15,7 +15,7 @@ const CreatePost = (props: any) => {
     <>
       <h1>Create Posts</h1>
       <input></input>
-      <div onClick={handleCreate()}>Create</div>
+      <div onClick={handleCreate}>Create</div>
     </>
   )
 }
